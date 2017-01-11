@@ -17,7 +17,7 @@ $(document).ready(function () {
           color: '#cdd0d5'
       }]),
       title: {
-          text: 'Scatter-plot - Life Expectancy vs GDP by countries in 1990 and 2015'
+          text: 'Scatter plot - Life Expectancy vs GDP per capita by countries in 1990 and 2015'
       },
       legend: {
           right: 10,
@@ -219,7 +219,7 @@ $(document).ready(function () {
   var option2 = {
       backgroundColor: '#161627',
       title: {
-          text: 'Radar Chart - Air Quality Index',
+          text: 'Radar chart - Air Quality',
           textStyle: {
               color: '#eee'
           }
@@ -334,74 +334,74 @@ $(document).ready(function () {
 
   myChart2.setOption(option2);
 
-  var myChart3 = echarts.init(document.getElementById('main3'));
-
-  var option3 = {
-      backgroundColor: '#2c343c',
-
-      title: {
-          text: 'Pie Chart - Interview Sources',
-          top: 20,
-          textStyle: {
-              color: '#ccc'
-          }
-      },
-
-      tooltip : {
-          trigger: 'item',
-          formatter: "{a} <br/>{b} : {c} ({d}%)"
-      },
-
-      visualMap: {
-          show: false,
-          min: 80,
-          max: 600,
-          inRange: {
-              colorLightness: [0, 1]
-          }
-      },
-      series : [
-          {
-              name:'Pie Chart - Interview sources',
-              type:'pie',
-              radius : '55%',
-              center: ['50%', '50%'],
-              data:[
-                  {value:335, name:'Direct Interview'},
-                  {value:310, name:'Email Marketing'},
-                  {value:274, name:'Advertising Alliance'},
-                  {value:235, name:'Video Ads'},
-                  {value:400, name:'Search Engine'}
-              ].sort(function (a, b) { return a.value - b.value}),
-              roseType: 'angle',
-              label: {
-                  normal: {
-                      textStyle: {
-                          color: 'rgba(255, 255, 255, 0.3)'
-                      }
-                  }
-              },
-              labelLine: {
-                  normal: {
-                      lineStyle: {
-                          color: 'rgba(255, 255, 255, 0.3)'
-                      },
-                      smooth: 0.2,
-                      length: 10,
-                      length2: 20
-                  }
-              },
-              itemStyle: {
-                  normal: {
-                      color: '#c23531',
-                      shadowBlur: 200,
-                      shadowColor: 'rgba(0, 0, 0, 0.5)'
-                  }
-              }
-          }
-      ]
-  };
-
-  myChart3.setOption(option3);
+  // var myChart3 = echarts.init(document.getElementById('main3'));
+  //
+  // var option3 = {
+  //     backgroundColor: '#2c343c',
+  //
+  //     title: {
+  //         text: 'Pie Chart - Interview Sources',
+  //         top: 20,
+  //         textStyle: {
+  //             color: '#ccc'
+  //         }
+  //     },
+  //
+  //     tooltip : {
+  //         trigger: 'item',
+  //         formatter: "{a} <br/>{b} : {c} ({d}%)"
+  //     },
+  //
+  //     visualMap: {
+  //         show: false,
+  //         min: 80,
+  //         max: 600,
+  //         inRange: {
+  //             colorLightness: [0, 1]
+  //         }
+  //     },
+  //     series : [
+  //         {
+  //             name:'Pie Chart - Interview sources',
+  //             type:'pie',
+  //             radius : '55%',
+  //             center: ['50%', '50%'],
+  //             data:[
+  //                 {value:335, name:'Direct Interview'},
+  //                 {value:310, name:'Email Marketing'},
+  //                 {value:274, name:'Advertising Alliance'},
+  //                 {value:235, name:'Video Ads'},
+  //                 {value:400, name:'Search Engine'}
+  //             ].sort(function (a, b) { return a.value - b.value}),
+  //             roseType: 'angle',
+  //             label: {
+  //                 normal: {
+  //                     textStyle: {
+  //                         color: 'rgba(255, 255, 255, 0.3)'
+  //                     }
+  //                 }
+  //             },
+  //             labelLine: {
+  //                 normal: {
+  //                     lineStyle: {
+  //                         color: 'rgba(255, 255, 255, 0.3)'
+  //                     },
+  //                     smooth: 0.2,
+  //                     length: 10,
+  //                     length2: 20
+  //                 }
+  //             },
+  //             itemStyle: {
+  //                 normal: {
+  //                     color: '#c23531',
+  //                     shadowBlur: 200,
+  //                     shadowColor: 'rgba(0, 0, 0, 0.5)'
+  //                 }
+  //             }
+  //         }
+  //     ]
+  // };
+  //
+  // myChart3.setOption(option3);
 
 })
